@@ -62,3 +62,50 @@
 - Khả năng tương tác không phong phú.
 
 ## Nuxt
+
+### 1. Cài đặt
+
+### 2. Thiết lập ban đầu
+
+1. nuxt.config.js
+
+- head: config phần thẻ head của website -> lí do sử dụng nuxt.
+
+- CSS và Plugins: import/include file global hoặc css vào Nuxt Apps (sử dụng để import các components/libraries). File được include sẽ chạy trong runtime
+
+*sử dụng dấu ~ để dynamic link*
+
+- Modules: Đối với các lib hỗ trợ nuxt, chỉ cần include vào module
+
+2. run dev
+
+- Khi run dev, nuxt sẽ build thư mục .nuxt 
+
+### 3. Cấu trúc thư mục
+
+3. components & assets:
+
+- tùy ý tạo components và import, không ảnh hưởng đến nuxt
+- Không biết mình có cài sai gì hông mà layout assets không có sẵn
+
+4. layout:
+
+- nuxt tự động import layout
+- Không biết mình có cài sai gì hông mà layout folder không có sẵn
+- tên đặt theo Kebab-case
+
+*https://stackoverflow.com/questions/68335919/some-of-the-directories-are-missing-when-im-trying-to-create-a-new-nuxt-js-proj*
+
+5. pages:
+- nuxt tự động tạo router cho pages. Nhưng nếu như mình muốn tùy chỉnh slugs thì làm sao?
+
+- dynamic routing: thêm dấu _ trước folder/file. slug sẽ được truyền vào params
+
+6. stores:
+
+- thêm file .js để store hoạt động
+- store tự import module.
+
+
+
+### 4. Life cycle
