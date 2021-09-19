@@ -49,9 +49,16 @@
 
 #### a. Ưu điểm
 
-- Initial load nhanh
+- Dễ optimize vì toàn bộ dữ liệu đã được xử lý ở phía Server
 - SEO tốt vì dữ liệu hiển thị dưới dạng HTML.
 - Chạy tốt trên mọi trình duyệt.
 - Phù hợp với static web.
 
 #### b. Nhược điểm
+
+- Thường xuyên request tới Server.
+- Dễ gây bottleneck với web có quá nhiều hiệu ứng.
+- Ít thân thiện với người dùng vì phải reload page.
+- Khả năng tương tác không phong phú.
+
+## Nuxt
